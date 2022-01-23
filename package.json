@@ -1,0 +1,27 @@
+{
+  "name": "website_ban_hang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "migrate": "knex migrate:rollback && knex migrate:up",
+    "seed": "knex seed:run"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.15",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15",
+    "objection": "^3.0.0",
+    "objection-password": "^3.0.0",
+    "path": "^0.12.7",
+    "pg": "^8.7.1",
+    "sharp": "^0.29.3",
+    "uuid": "^8.3.2",
+    "validatorjs": "^3.22.1"
+  }
+}
