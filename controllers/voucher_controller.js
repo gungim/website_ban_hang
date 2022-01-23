@@ -115,7 +115,7 @@ const addBundProduct = async (req, res) => {
 
 const removeBundProduct = async (req, res) => {
   const id = req.params.id;
-  const bundId = req.body.bundledId;
+  const bundId = req.params.bundledId;
 
   try {
     const removedBundProduct = await BundProduct.query()
