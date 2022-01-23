@@ -8,6 +8,7 @@ const categoryRouter = require('./routers/category_router');
 const productRouter = require('./routers/product_router');
 const cartRouter = require('./routers/cart_router');
 const orderRouter = require('./routers/order_router');
+const voucherRouter = require('./routers/voucher_router');
 
 const app = express();
 app.use('/images', express.static(__dirname + '/public/images'));
@@ -21,6 +22,7 @@ app.use('/categories', categoryRouter);
 app.use('/product', productRouter);
 app.use('/cart', cartRouter);
 app.use('/order', orderRouter);
+app.use('/voucher', voucherRouter);
 
 const PORT = 3000 || process.env.PORT;
 
